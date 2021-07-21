@@ -5,7 +5,7 @@ import AboutSection from "./components/AboutSection";
 import Nav from './components/Nav';
 import Contacts from './pages/Contacts';
 import GlobalStyles from './GlobalStyles';
-import ProjectDetail from './pages/Projects'
+import ProjectDetails from './pages/ProjectsDetails'
 
 function App() {
   return (

@@ -1,7 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
-import {motion} from 'framer-motion';
 import { useHistory } from 'react-router-dom';
+import {motion} from 'framer-motion';
+import styled from 'styled-components';
+
+import {projectState} from '../projectState';
 import { pageAnimation } from '../animation';
 
 const MovieDetail = () => {
@@ -27,7 +29,7 @@ const MovieDetail = () => {
           animate="show">
           <Headline>
             <h2>{project.title}</h2>
-            <img src={project.mainImg} alt="movie" /> 
+            <img src={project.mainImg} alt="proj" /> 
           </Headline>
           <DetailInfo>
             {project.projectsInfo.map((projectInfo) => (
@@ -38,7 +40,7 @@ const MovieDetail = () => {
             ) )}
           </DetailInfo>
           <ImageDisplay>
-            <img src={project.secondaryImg} alt="movie" />
+            <img src={project.secondaryImg} alt="proj" />
           </ImageDisplay>
         </Details>
       )}
