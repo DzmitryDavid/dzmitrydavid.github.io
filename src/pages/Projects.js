@@ -1,29 +1,35 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import { motion} from 'framer-motion';
 import { Hide } from '../styles';
+import { useScroll } from '../components/useScroll';
 import {
   pageAnimation,
   fade,
   photoAnimation,
   lineAnimation,
   slider,
-  sliderContainer
+  sliderContainer,
+  scrollReveal
+  
 } from '../animation';
 
 import burger from '../img/burger.jpg';
 import chillPlayer from '../img/player.jpg';
 import movieFinder from '../img/movieFinder.jpg';
 
+
 const Projects = () => {
+  const [element, controls ] = useScroll()
   return (
     <ProjectsStyled
+    
       exit="exit"
       variants={pageAnimation}
       initial="hidden"
       animate="show"
+      
     >
       <motion.div variants={sliderContainer}>
 
@@ -34,8 +40,10 @@ const Projects = () => {
 
       </motion.div>
 
-      <ProjectStyled>
-        <motion.h2 variants={fade}>Burger Builder</motion.h2>
+      <ProjectStyled
+        
+      >
+        <motion.h2 variants={scrollReveal}>Burger Builder</motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/projects/burger-builder">
           <Hide>
@@ -43,14 +51,19 @@ const Projects = () => {
           </Hide>
         </Link>
       </ProjectStyled>
-      <ProjectStyled>
+      <ProjectStyled
+      variants={fade}
+      animate={controls}
+      initial="hidden"
+      ref={element}>
         <h2>Chill Player</h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/projects/chill-player">
           <img src={chillPlayer} alt="chill-player" />
         </Link>
       </ProjectStyled>
-      <ProjectStyled>
+      <ProjectStyled
+      >
         <h2>Movie Finder</h2>
         <div className="line"></div>
         <Link to="/projects/movie-finder">
@@ -70,7 +83,7 @@ const ProjectsStyled = styled(motion.div)`
     padding: 1rem 0;
   }
 `;
-const ProjectStyled = styled.div`
+const ProjectStyled = styled(motion.div)`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;

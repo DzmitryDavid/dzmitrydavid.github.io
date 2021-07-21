@@ -10,8 +10,8 @@ const MoreInfo = () => {
     <MoreInfoStyled>
       <h2>
         More About
-        <span>Dzmitry</span>
-        Davidovich
+        Dzmitry
+        <span>Davidovich</span>
       </h2>
       <AnimateSharedLayout>
         <Toggle title="About">
@@ -70,7 +70,7 @@ const MoreInfoStyled = styled(About)`
   .info-line {
     background: #cccccc;
     height: 0.2rem;
-    margin: 1rem 0;
+    margin: 2rem 0;
     width: 100%;
   }
   .title {
