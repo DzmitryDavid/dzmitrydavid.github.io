@@ -1,9 +1,8 @@
 import React from 'react'
 import {motion} from 'framer-motion';
 
-import AboutSection from '../components/AboutSection/AboutSection';
+import AboutSection from '../components/AboutSection';
 import SkillsSection from '../components/SkiilsSection';
-
 import { pageAnimation } from '../animation';
 
 const About = () => {

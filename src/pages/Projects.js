@@ -29,7 +29,7 @@ const Projects = () => {
         <h2>Movie Finder</h2>
         <div className="line"></div>
         <Link to="/projects/movie-finder">
-          {/* <img src={movieFinder} alt="finder" /> */}
+          <img src={movieFinder} alt="finder" />
         </Link>
       </ProjectStyled>
     </ProjectsStyled>

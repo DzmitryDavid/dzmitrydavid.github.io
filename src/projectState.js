@@ -7,7 +7,6 @@ export const projectState = () => {
     {
       title: 'Burger Builder',
       mainImg: burger,
-
       url: '/projects/burger-builder',
       projectInfo: [
         {

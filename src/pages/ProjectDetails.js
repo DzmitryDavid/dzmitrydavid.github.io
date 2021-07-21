@@ -12,14 +12,12 @@ const ProjectDetails = () => {
   const [projects, setProjects] = React.useState(projectState);
   const [project, setProject] = React.useState(null);
 
-  console.log(project);
-
+  
   React.useEffect(() => {
     const currentProject = projects.filter((stateProject) => stateProject.url === url);
     setProject(currentProject[0]);
   }, [projects, url]);
   
-  console.log(project);
   return (
     <>
       {project && (
@@ -33,7 +31,7 @@ const ProjectDetails = () => {
             <img src={project.mainImg} alt="proj" /> 
           </Headline>
           <DetailInfo>
-            {project.projectsInfo.map((projectInfo) => (
+            {project.projectInfo.map((projectInfo) => (
               <Info 
                 key={projectInfo.title}
                 description={projectInfo.description}
@@ -67,7 +65,6 @@ const Headline = styled.div`
     top: 10%;
     left: 50%;
     transform: translate(-50%, -10%);
-    
   }
 `;
 const DetailInfo = styled.div`

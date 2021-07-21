@@ -1,45 +1,45 @@
 import React from 'react'
 import styled from 'styled-components';
-import {About, Description, Image} from '../../styles';
+import {About, Description, Image} from '../styles';
 
-import clock from '../../img/clock.svg';
-import diafragm from '../../img/diaphragm.svg';
-import money from '../../img/money.svg';
-import teamwork from '../../img/teamwork.svg';
-import homeTwo from '../../img//home-two.png';
+// import clock from '../../img/clock.svg';
+// import diafragm from '../../img/diaphragm.svg';
+// import money from '../../img/money.svg';
+// import teamwork from '../../img/teamwork.svg';
+import homeTwo from '../img/burger.jpg';
 
 
 const SkillsSection = () => {
   return (
     <Skills>
       <Description>
-        <h2>High <span>quality </span>services</h2>
+        <h2>My <span>Technical </span>skillset</h2>
       <Cards>
         <Card>
           <div className="icon">
-            <img src={clock} alt="clock" />
-            <h3>Efficient</h3>
+            {/* <img src={clock} alt="clock" /> */}
+            <h3>Lorem ipsum dolor sit.</h3>
           </div>
           <p>Lorem ipsum dolor sit amet.</p>
         </Card>
         <Card>
           <div className="icon">
-            <img src={diafragm} alt="clock" />
-            <h3>Diafragm</h3>
+            {/* <img src={diafragm} alt="clock" /> */}
+            <h3>Lorem ipsum dolor sit.</h3>
           </div>
           <p>Lorem ipsum dolor sit amet.</p>
         </Card>
         <Card>
           <div className="icon">
-            <img src={money} alt="clock" />
-            <h3>Money</h3>
+            {/* <img src={money} alt="clock" /> */}
+            <h3>Lorem ipsum dolor sit.</h3>
           </div>
           <p>Lorem ipsum dolor sit amet.</p>
         </Card>
         <Card>
           <div className="icon">
-            <img src={teamwork} alt="clock" />
-            <h3>Teamwork</h3>
+            {/* <img src={teamwork} alt="clock" /> */}
+            <h3>Lorem ipsum dolor sit.</h3>
           </div>
           <p>Lorem ipsum dolor sit amet.</p>
         </Card>
