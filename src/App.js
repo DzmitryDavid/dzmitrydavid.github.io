@@ -5,7 +5,7 @@ import AboutSection from "./components/AboutSection";
 import Nav from './components/Nav';
 import Contacts from './pages/Contacts';
 import GlobalStyles from './GlobalStyles';
-import ProjectDetail from './pages/ProjectDetail'
+import ProjectDetail from './pages/Projects'
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           <Contacts />
         </Route>
         {/* <Route path="/projects/:id">
-          <ProjectDetail/>
+          <ProjectDetails/>
         </Route> */}
         
       </Switch>
