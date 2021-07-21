@@ -19,9 +19,9 @@ function App() {
         <Route path="/contacts">
           <Contacts />
         </Route>
-        {/* <Route path="/projects/:id">
+        <Route path="/projects/:id">
           <ProjectDetails/>
-        </Route> */}
+        </Route>
         
       </Switch>
     </div>
