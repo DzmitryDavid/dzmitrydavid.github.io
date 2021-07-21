@@ -6,7 +6,7 @@ import styled from 'styled-components';
 import {projectState} from '../projectState';
 import { pageAnimation } from '../animation';
 
-const MovieDetail = () => {
+const ProjectDetails = () => {
   const history = useHistory();
   const url = history.location.pathname;
   const [projects, setProjects] = React.useState(projectState);
@@ -19,6 +19,7 @@ const MovieDetail = () => {
     setProject(currentProject[0]);
   }, [projects, url]);
   
+  console.log(project);
   return (
     <>
       {project && (
@@ -108,4 +109,4 @@ const Info = (props) => {
     </InfoStyle>
   )
 }
-export default MovieDetail;
+export default ProjectDetails;

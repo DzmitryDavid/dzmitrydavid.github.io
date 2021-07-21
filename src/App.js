@@ -1,29 +1,35 @@
 import React from 'react';
-import { Route, Switch } from 'react-router';
-
-import AboutSection from "./components/AboutSection";
+import { Route, Switch, useLocation } from 'react-router';
+import { AnimatePresence } from 'framer-motion';
+import AboutSection from './components/AboutSection';
 import Nav from './components/Nav';
 import Contacts from './pages/Contacts';
 import GlobalStyles from './GlobalStyles';
-import ProjectDetails from './pages/ProjectDetails'
+import Projects from './pages/Projects';
+import ProjectDetails from './pages/ProjectDetails';
 
 function App() {
+  const location = useLocation();
   return (
     <div className="App">
-      <GlobalStyles/>
-        <Nav/>
-      <Switch>
-        <Route exact path="/">
-          <AboutSection />
-        </Route>
-        <Route path="/contacts">
-          <Contacts />
-        </Route>
-        <Route path="/projects/:id">
-          <ProjectDetails/>
-        </Route>
-        
-      </Switch>
+      <GlobalStyles />
+      <Nav />
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.pathname}>
+          <Route exact path="/">
+            <AboutSection />
+          </Route>
+          <Route path="/contacts">
+            <Contacts />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/projects/:id">
+            <ProjectDetails />
+          </Route>
+        </Switch>
+      </AnimatePresence>
     </div>
   );
 }
