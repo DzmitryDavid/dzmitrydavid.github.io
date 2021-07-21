@@ -6,7 +6,7 @@ export const About = styled.div `
   align-items: center; 
   justify-content: space-between;
   padding: 5rem 10rem;
-  color: #70706c; 
+  color: #fff; 
 `;
 
 export const Description = styled.div`
