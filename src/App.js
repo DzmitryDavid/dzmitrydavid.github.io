@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Switch, useLocation } from 'react-router';
 import { AnimatePresence } from 'framer-motion';
 
-import About from './pages/About';
+import Home from './pages/Home';
 import Nav from './components/Nav';
 import Contacts from './pages/Contacts';
 import GlobalStyles from './GlobalStyles';
@@ -18,7 +18,7 @@ function App() {
       <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route exact path="/">
-            <About />
+            <Home />
           </Route>
           <Route path="/contacts">
             <Contacts />

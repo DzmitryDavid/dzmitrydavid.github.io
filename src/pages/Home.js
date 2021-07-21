@@ -1,17 +1,15 @@
 import React from 'react'
 import {motion} from 'framer-motion';
 
-import AboutSection from '../components/AboutSection';
-import SkillsSection from '../components/SkiilsSection';
+import HomeSection from '../components/HomeSection';
 import { pageAnimation } from '../animation';
 
-const About = () => {
+const Home = () => {
   return (
     <motion.div exit="exit" variants={pageAnimation} initial="hidden" animate="show">
-      <AboutSection/>
-      <SkillsSection/>
+      <HomeSection />
     </motion.div>
   );
 }
 
-export default About;
+export default Home;

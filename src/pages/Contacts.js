@@ -1,9 +1,12 @@
 import React from 'react'
+import SkillsSection from '../components/SkiilsSection';
+import MoreInfo from '../components/MoreInfo';
 
 const Contacts = () => {
   return (
     <div >
-      <h1>Contact Us</h1>
+      <MoreInfo/>
+      <SkillsSection/>
     </div>
   )
 }

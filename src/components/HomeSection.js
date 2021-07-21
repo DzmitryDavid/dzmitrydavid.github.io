@@ -5,7 +5,7 @@ import Wave from './Wave';
 import { titleAnimation, fade, photoAnimation } from '../animation';
 import aboutImg from '../img/titleImg.png';
 
-const AboutSection = () => {
+const HomeSection = () => {
   
   return (
     <About >
@@ -35,4 +35,4 @@ const AboutSection = () => {
   )
 }
 
-export default AboutSection;
+export default HomeSection;
