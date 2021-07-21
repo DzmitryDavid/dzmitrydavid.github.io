@@ -1,11 +1,14 @@
+import burger from './img/burger.jpg';
+import chillPlayer from './img/player.jpg';
+import movieFinder from './img/movieFinder.jpg';
 
 export const projectState = () => {
   return [
     {
       title: 'Burger Builder',
       mainImg: burger,
-      secondaryImg: burger2,
-      url: "/projects/burger-builder",
+
+      url: '/projects/burger-builder',
       projectInfo: [
         {
           title: 'Burger Builder',
@@ -27,8 +30,8 @@ export const projectState = () => {
     {
       title: 'Chill Player',
       mainImg: chillPlayer,
-      url: "/projects/chill-player",
-      secondaryImg: chillPlayer2,
+      url: '/projects/chill-player',
+
       projectInfo: [
         {
           title: 'Chill Player',
@@ -51,7 +54,7 @@ export const projectState = () => {
       title: 'Movie Finder',
       mainImg: movieFinder,
       url: '/projects/movie-finder',
-      secondaryImg: movieFinder,
+
       projectInfo: [
         {
           title: 'movieFinder',

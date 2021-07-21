@@ -1,7 +1,7 @@
 import React from 'react';
 import { About, Hide, Description, Image } from '../styles';
 
-import aboutImg from '../img/photo_2021-01-19_13-21-19-removebg-preview.png';
+import aboutImg from '../img/titleImg.png';
 
 const AboutSection = () => {
   

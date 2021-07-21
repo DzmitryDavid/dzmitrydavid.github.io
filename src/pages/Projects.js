@@ -4,9 +4,9 @@ import {Link} from 'react-router-dom';
 import {motion} from 'framer-motion';
 import { pageAnimation } from '../animation';
 
-// import burger from '';
-// import chillPlayer from '';
-// import movieFinder from '';
+import burger from '../img/burger.jpg';
+import chillPlayer from './img/player.jpg';
+import movieFinder from './img/movieFinder.jpg';
 
 const Projects = () => {
   return (
@@ -29,7 +29,7 @@ const Projects = () => {
         <h2>Movie Finder</h2>
         <div className="line"></div>
         <Link to="/projects/movie-finder">
-          <img src={movieFinder} alt="movie goodtimes" />
+          <img src={movieFinder} alt="finder" />
         </Link>
       </ProjectStyled>
     </ProjectsStyled>
