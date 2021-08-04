@@ -28,19 +28,20 @@ const ProjectDetails = () => {
           animate="show">
           <Headline>
             <h2>{project.title}</h2>
-            <img src={project.mainImg} alt="proj" /> 
+            <img src={project.secondaryImg} alt="project" /> 
           </Headline>
           <DetailInfo>
             {project.projectInfo.map((projectInfo) => (
               <Info 
                 key={projectInfo.title}
                 description={projectInfo.description}
-                title={projectInfo.title}/>
-            ) )}
+                title={projectInfo.title}
+                demo={projectInfo.demo}
+                features={projectInfo.features}
+                />
+            ))}
+            
           </DetailInfo>
-          <ImageDisplay>
-            <img src={project.secondaryImg} alt="proj" />
-          </ImageDisplay>
         </Details>
       )}
     </>
@@ -48,23 +49,27 @@ const ProjectDetails = () => {
 };
 const Details = styled(motion.div)`
   color: #fff;
-
 `;
 const Headline = styled.div`
   min-height: 90vh;
-  padding-top: 20vh;
+  padding-top: 25vh;
   position: relative;
+  text-align: center;
   img {
       width: 100%;
-      height: 70vh;
+      height: 75vh;
       object-fit: cover;
-
     }
   h2 {
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -10%);
+  }
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 2.5rem;
+    }
   }
 `;
 const DetailInfo = styled.div`
@@ -73,11 +78,19 @@ const DetailInfo = styled.div`
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
+  @media (max-width: 1500px) {
+    display: block;
+    margin: 2rem 2rem;
+  }
+  
 `;
 const InfoStyle = styled.div`
-  padding: 5rem;
+  padding: 5rem 8rem;
     h3 {
       font-size: 2rem;
+      display:flex;
+      justify-content:space-between;
+      align-items: center;
     }
     .line {
       width: 100%;
@@ -85,25 +98,38 @@ const InfoStyle = styled.div`
       height: 0.5rem;
       margin: 1rem 0;
     }
+    li {
+      padding: 0.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
     p {
       padding: 2rem 0;
     }
+    a {
+      text-decoration: none;
+      color: #23d997;
+    }
+    @media (max-width: 500px) {
+      padding: 2em;
+    }
 `;
-const ImageDisplay = styled.div`
-  min-height: 50vh;
-  img {
-    width:100%;
-    height: 100vh;
-    object-fit: cover;
-  }
-`;
+
 const Info = (props) => {
   return (
     <InfoStyle>
-      <h3>{props.title}</h3>
+      <h3>{props.title}
+      <a target="_blank" rel="noopener noreferrer" href={props.demo}>DEMO</a>
+      </h3>
       <div className="line"></div>
       <p>{props.description}</p>
+      <ul >
+      {props.features.map((item, ind) => (<li key={ind}>
+        {item}
+      </li>))}
+      </ul>
     </InfoStyle>
   )
 }
+
 export default ProjectDetails;

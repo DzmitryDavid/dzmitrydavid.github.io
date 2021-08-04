@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { motion} from 'framer-motion';
+import {projectState} from '../projectState'
 import { Hide } from '../styles';
-import { useScroll } from '../components/useScroll';
+
 import {
   pageAnimation,
   fade,
@@ -11,17 +12,11 @@ import {
   lineAnimation,
   slider,
   sliderContainer,
-  scrollReveal
   
 } from '../animation';
 
-import burger from '../img/burger.jpg';
-import chillPlayer from '../img/player.jpg';
-import movieFinder from '../img/movieFinder.jpg';
-
-
 const Projects = () => {
-  const [element, controls ] = useScroll()
+  const [projects, setProjects] = React.useState(projectState);
   return (
     <ProjectsStyled
     
@@ -29,7 +24,6 @@ const Projects = () => {
       variants={pageAnimation}
       initial="hidden"
       animate="show"
-      
     >
       <motion.div variants={sliderContainer}>
 
@@ -39,37 +33,17 @@ const Projects = () => {
         <Frame4 variants={slider} />
 
       </motion.div>
-
-      <ProjectStyled
-        
-      >
-        <motion.h2 variants={scrollReveal}>Burger Builder</motion.h2>
+      {projects.map((project) => {
+        return <ProjectStyled key={project.title}>
+        <motion.h2 variants={fade}>{project.title}</motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
-        <Link to="/projects/burger-builder">
+        <Link to={project.url}>
           <Hide>
-            <motion.img variants={photoAnimation} src={burger} alt="burger" />
+            <motion.img variants={photoAnimation} src={project.mainImg} alt={project.title} />
           </Hide>
         </Link>
       </ProjectStyled>
-      <ProjectStyled
-      variants={fade}
-      animate={controls}
-      initial="hidden"
-      ref={element}>
-        <h2>Chill Player</h2>
-        <motion.div variants={lineAnimation} className="line"></motion.div>
-        <Link to="/projects/chill-player">
-          <img src={chillPlayer} alt="chill-player" />
-        </Link>
-      </ProjectStyled>
-      <ProjectStyled
-      >
-        <h2>Movie Finder</h2>
-        <div className="line"></div>
-        <Link to="/projects/movie-finder">
-          <img src={movieFinder} alt="finder" />
-        </Link>
-      </ProjectStyled>
+      })}
     </ProjectsStyled>
   );
 };
@@ -78,22 +52,31 @@ const ProjectsStyled = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
-  background: #fff;
+  text-align: center;
+
   h2 {
+    color: #fff;
     padding: 1rem 0;
+  }
+  @media (max-width: 1300px) {
+    padding: 2rem 2rem;
   }
 `;
 const ProjectStyled = styled(motion.div)`
   padding-bottom: 10rem;
+  @media (max-width: 650px) {
+    padding-bottom: 2rem;
+  }
+  
+  img {
+      width: 70%;
+      height: 60vh;
+      object-fit: contain;
+    }
   .line {
     height: 0.5rem;
     background: #23d997;
     margin-bottom: 3rem;
-    img {
-      width: 100%;
-      height: 70vh;
-      object-fit: cover;
-    }
   }
 `;
 const Frame1 = styled(motion.div)`

@@ -2,15 +2,22 @@ import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle `
 
-  *{
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
   }
+  html {
+    @media (max-width: 1700px) {
+      font-size: 75%;
+    }
+    
+  }
   body {
     background: #1b1b1b;
     font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
   }
   button {
     font-weight: bold;
@@ -45,6 +52,8 @@ const GlobalStyles = createGlobalStyle `
   h4 {
     font-weight: bold;
     font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
 
   }
   a {
@@ -54,5 +63,9 @@ const GlobalStyles = createGlobalStyle `
     font-weight: bold;
     color: #23d997;
   }
+  ul {
+    list-style: none;
+  }
 `
+
 export default GlobalStyles;

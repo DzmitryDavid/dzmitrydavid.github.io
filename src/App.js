@@ -4,10 +4,11 @@ import { AnimatePresence } from 'framer-motion';
 
 import Home from './pages/Home';
 import Nav from './components/Nav';
-import Contacts from './pages/Contacts';
 import GlobalStyles from './GlobalStyles';
 import Projects from './pages/Projects';
 import ProjectDetails from './pages/ProjectDetails';
+import MoreInfo from './pages/MoreInfo';
+
 
 function App() {
   const location = useLocation();
@@ -20,8 +21,8 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/contacts">
-            <Contacts />
+          <Route path="/about">
+            <MoreInfo />
           </Route>
           <Route exact path="/projects">
             <Projects />
