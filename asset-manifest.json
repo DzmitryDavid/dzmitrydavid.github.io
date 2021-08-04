@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.js": "/potrfolio-react/static/js/main.43fc5990.chunk.js",
+    "main.js.map": "/potrfolio-react/static/js/main.43fc5990.chunk.js.map",
+    "runtime-main.js": "/potrfolio-react/static/js/runtime-main.bc27c56f.js",
+    "runtime-main.js.map": "/potrfolio-react/static/js/runtime-main.bc27c56f.js.map",
+    "static/js/2.446d3bc2.chunk.js": "/potrfolio-react/static/js/2.446d3bc2.chunk.js",
+    "static/js/2.446d3bc2.chunk.js.map": "/potrfolio-react/static/js/2.446d3bc2.chunk.js.map",
+    "static/js/3.20db268e.chunk.js": "/potrfolio-react/static/js/3.20db268e.chunk.js",
+    "static/js/3.20db268e.chunk.js.map": "/potrfolio-react/static/js/3.20db268e.chunk.js.map",
+    "index.html": "/potrfolio-react/index.html",
+    "static/js/2.446d3bc2.chunk.js.LICENSE.txt": "/potrfolio-react/static/js/2.446d3bc2.chunk.js.LICENSE.txt",
+    "static/media/I.222018a7.jpg": "/potrfolio-react/static/media/I.222018a7.jpg",
+    "static/media/burger-full.63284c36.jpg": "/potrfolio-react/static/media/burger-full.63284c36.jpg",
+    "static/media/burger.117222a1.jpg": "/potrfolio-react/static/media/burger.117222a1.jpg",
+    "static/media/crwn-clothing.bf9f2952.jpg": "/potrfolio-react/static/media/crwn-clothing.bf9f2952.jpg",
+    "static/media/crwn-full.d41a8aa7.jpg": "/potrfolio-react/static/media/crwn-full.d41a8aa7.jpg",
+    "static/media/iGnite-full.fd8375d3.jpg": "/potrfolio-react/static/media/iGnite-full.fd8375d3.jpg",
+    "static/media/iGnite.00b26df3.jpg": "/potrfolio-react/static/media/iGnite.00b26df3.jpg",
+    "static/media/player-full.6d557402.jpg": "/potrfolio-react/static/media/player-full.6d557402.jpg",
+    "static/media/player.5dd24a91.jpg": "/potrfolio-react/static/media/player.5dd24a91.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc27c56f.js",
+    "static/js/2.446d3bc2.chunk.js",
+    "static/js/main.43fc5990.chunk.js"
+  ]
+}
