@@ -25,8 +25,11 @@ const HomeSection = () => {
             <motion.h2 variants={titleAnimation} >developer.</motion.h2>
           </Hide>
         </motion.div>
-          <motion.p variants={fade}>Hello everyone! My name is Dzmitry. 
-          <div>I'm a Front-end developer from Minsk, Belarus</div></motion.p>
+          <motion.p variants={fade}>
+            Hello everyone!
+            <span>My name is Dzmitry</span>
+            I'm a Front-end developer from Minsk, Belarus
+          </motion.p>
           <Link to="/about">
             <motion.button  variants={fade}>More about me</motion.button>
           </Link>

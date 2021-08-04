@@ -124,9 +124,9 @@ const Info = (props) => {
       <div className="line"></div>
       <p>{props.description}</p>
       <ul >
-      {props.features.map((item, ind) => (<li key={ind}>
+        {props.features.map((item, ind) => (<li key={ind}>
         {item}
-      </li>))}
+          </li>))}
       </ul>
     </InfoStyle>
   )

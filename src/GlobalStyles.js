@@ -62,6 +62,7 @@ const GlobalStyles = createGlobalStyle `
   span {
     font-weight: bold;
     color: #23d997;
+    display: block;
   }
   ul {
     list-style: none;
