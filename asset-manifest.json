@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.js": "/static/js/main.43fc5990.chunk.js",
+    "main.js.map": "/static/js/main.43fc5990.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.736d1399.js",
+    "runtime-main.js.map": "/static/js/runtime-main.736d1399.js.map",
+    "static/js/2.4dda5092.chunk.js": "/static/js/2.4dda5092.chunk.js",
+    "static/js/2.4dda5092.chunk.js.map": "/static/js/2.4dda5092.chunk.js.map",
+    "static/js/3.20db268e.chunk.js": "/static/js/3.20db268e.chunk.js",
+    "static/js/3.20db268e.chunk.js.map": "/static/js/3.20db268e.chunk.js.map",
+    "index.html": "/index.html",
+    "static/js/2.4dda5092.chunk.js.LICENSE.txt": "/static/js/2.4dda5092.chunk.js.LICENSE.txt",
+    "static/media/I.222018a7.jpg": "/static/media/I.222018a7.jpg",
+    "static/media/burger-full.63284c36.jpg": "/static/media/burger-full.63284c36.jpg",
+    "static/media/burger.117222a1.jpg": "/static/media/burger.117222a1.jpg",
+    "static/media/crwn-clothing.bf9f2952.jpg": "/static/media/crwn-clothing.bf9f2952.jpg",
+    "static/media/crwn-full.d41a8aa7.jpg": "/static/media/crwn-full.d41a8aa7.jpg",
+    "static/media/iGnite-full.fd8375d3.jpg": "/static/media/iGnite-full.fd8375d3.jpg",
+    "static/media/iGnite.00b26df3.jpg": "/static/media/iGnite.00b26df3.jpg",
+    "static/media/player-full.6d557402.jpg": "/static/media/player-full.6d557402.jpg",
+    "static/media/player.5dd24a91.jpg": "/static/media/player.5dd24a91.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.736d1399.js",
+    "static/js/2.4dda5092.chunk.js",
+    "static/js/main.43fc5990.chunk.js"
+  ]
+}
