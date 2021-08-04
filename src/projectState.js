@@ -40,7 +40,7 @@ export const projectState = () => {
         {
           title: 'Crwn Clothing',
           description:
-          "crown clothing",
+          "crown clothing ...in progress",
           features: [],
           demo: 'https://github.com/',
         },
@@ -75,8 +75,8 @@ export const projectState = () => {
         {
           title: 'Burger Builder',
           description:
-            '“Lorem Ipsum is simply dummy text of the printing and typesetting industry.”',
-          demo: 'https://github.com/',
+            '...in progress',
+          demo: 'https://dzmitrydavid.github.io/burger-app/',
           features:[]
         },
       ],
